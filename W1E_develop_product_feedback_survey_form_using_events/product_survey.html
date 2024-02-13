@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luxury Brand Feedback</title>
+</head>
+<body>
+  <h1>Bienvenido a la Encuesta de Productos de Lujo</h1>
+  <h2>Proporciona tu Retroalimentación</h2>
+  <label for="name">Nombre:</label><br>
+  <input type="text" id="name" placeholder="Tu Nombre" required><br>
+  <label for="age">Edad:</label><br>
+  <input type="number" id="age" placeholder="Tu Edad" required><br>
+  <label for="email">Correo Electrónico:</label><br>
+  <input type="email" id="email" placeholder="Tu Correo Electrónico" required><br>
+  <label for="job">Trabajo:</label><br>
+  <input type="text" id="job" placeholder="Tu Trabajo" required><br>
+  <label for="designation">Designación:</label><br>
+  <input type="text" id="designation" placeholder="Tu Designación" required><br>
+  <label for="productType">Tipo de Producto:</label><br>
+  <select id="productType" required>
+    <option value="perfume">Perfume</option>
+    <option value="cream">Crema</option>
+    <option value="oils">Aceites</option>
+  </select><br>
+  <label for="feedbackText">Retroalimentación:</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Ingresa tu retroalimentación aquí" required></textarea><br>
+  <label for="userExperience">Experiencia:</label><br> <!-- Nueva etiqueta para la experiencia -->
+  <textarea id="userExperience" rows="4" cols="50"></textarea><br> <!-- Nuevo campo de texto para la experiencia -->
+  <button id="submitBtn">Enviar Retroalimentación</button>
+  <hr>
+  <div id="userInfo" style="display: none;">
+    <h2>Información del Usuario:</h2>
+    <p>Nombre: <span id="userName"></span></p>
+    <p>Edad: <span id="userAge"></span></p>
+    <p>Correo Electrónico: <span id="userEmail"></span></p>
+    <p>Trabajo: <span id="userJob"></span></p>
+    <p>Designación: <span id="userDesignation"></span></p>
+    <p>Retroalimentación para <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+    <p>Experiencia del Usuario: <span id="userExperienceDisplay"></span></p> <!-- Mostrar la experiencia del usuario -->
+  </div>
+  <script src="./product_survey.js"></script>
+</body>
+</html>
