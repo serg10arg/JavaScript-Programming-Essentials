@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ?UTF-8 codificación de caracteres universal, nos aseguramos de que el navegador interprete correctamente los caracteres especiales y los ASCII presentes en este documento -->
+    <meta charset="UTF-8">                                   
+    <title>Book Management System</title>
+</head>
+<body>
+    <h1>Book Management System</h1>
+    <!-- ?La etiqueta <label> está asociada al campo de entrada <input> mediante el atributo "for" -->
+    <label for="bookName">Book Name:</label><br> 
+    <input type="text" id="bookName"><br><br> 
+    <label for="authorName">Author Name:</label><br>
+    <!-- ?textarea: define un área de texto para que los usuarios puedan escribir múltiples líneas de texto -->
+    <textarea id="authorName" rows="4"></textarea><br><br>
+    <label for="bookDescription">Book Description</label><br>
+    <textarea id="bookDescription" rows="4"></textarea><br><br>
+    <label for="pagesNumber">No. of Pages Time</label><br>
+    <input type="number" id="pagesNumber"><br><br>
+    <button onclick="addBook()">Add Book</button>
+
+    <h2>Books</h2>
+    <!-- ?La función de este <div> es proporcionar un contenedor para agrupar y organizar otros elementos HTML relacionados con libros para su posterior manipulación con JavaScript -->
+    <div id="books">
+        <!-- ?Books will be displayed here -->
+    </div>
+    <script src="./book_system.js"></script>
+
+</body>
+</html>
